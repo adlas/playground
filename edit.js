@@ -127,7 +127,7 @@
         && (card.species == 0 || eval('species_' + card.species).checked)
         && !((ignoreOld || !national_all.checked) && card.ver < 6)
         && eval((card.ver < 6 ? 'national_' : 'ver_') + card.ver).checked
-        && eval('cost_' + card.cost).checked
+        && eval('cost_' + card.cost>=8? 8 : card.cost).checked
         && card.rarity > dropRarity;
     }
 
