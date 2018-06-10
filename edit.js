@@ -121,6 +121,7 @@
     ).join('');
 
     function checkCard(card) {
+      if(card.ver > 26){ console.log(card); }
       return eval('dop_' + card.op).checked
         && eval('type_' + card.type).checked
         && eval('color_' + card.color).checked
